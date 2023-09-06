@@ -17,10 +17,10 @@
 <!--Fin cabecera-->
 
 <section>
-  <form class="form-register" action="bd/registra.php" method="post" name="form" id="form">
+  <form class="form-register" action="bd/registrar.php" method="post" name="form" id="form">
   <h4>Formulario Registro - Complete los campos solicitados</h4>
   <input class="controls" type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido">
-    <input class="controls" type="text" name="dni" id="dni" placeholder="Dni">
+    <input class="controls" type="number" name="dni" id="dni" placeholder="Dni">
     <input class="controls" type="number" name="edad" id="edad" placeholder="Edad">
     Sexo
     <select name="sexo" id="sexo" class="controls">
