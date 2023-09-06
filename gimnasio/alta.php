@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" href="css/formulario.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
     <title>Sistema - Gimnasio</title>
 </head>
 <body>
@@ -16,49 +17,32 @@
 <!--Fin cabecera-->
 
 <section>
-    <div class="row">
-        <div class="col-12">
-            <div class="container mt-2 mb-2 p-1">
-                <h5>Formulario de registro - Completar los campos</h5>
-                
-                <div class="main">
-      <div class="one">
-        <div class="register">
-          <form id="reg-form" action="registro.php" method="post">
-            <div>
-              <label for="name">Nombre completo</label>
-              <input type="text" id="name" spellcheck="false" placeholder="Shridhar Deshmukh"/>
-            </div>
-            <div>
-              <label for="email">Correo Electrónico</label>
-              <input type="text" id="email" spellcheck="false" placeholder="shridhardeshmukh@xyz.com"/>
-            </div>
-            <div>
-              <label for="username">Edad</label>
-              <input type="number" id="edad" spellcheck="false" placeholder="edad" />
-            </div>
-            <div>
-              <label>Sexo</label>
-              <input type="text" id="sexo" />
-            </div>
-            <div>
-              <label > Plan de entrenamiento </label>
-              <select name="plan" id="plan">
-                <option value="4500">3 veces por semana ($4500) </option>
-                <option value="3000">2 veces por semana ($3000)</option>
-                <option value="5500">Libre ($5500)</option>
-              </select>
-            </div>
-            <div>
-              <label></label>
-              <input type="submit" value="Registrar usuario" id="create-account" class="button"/>
-            </div>
-          </form>
-
-
-            </div>
-        </div>
-    </div>
+  <form class="form-register" action="bd/registra.php" method="post" name="form" id="form">
+  <h4>Formulario Registro - Complete los campos solicitados</h4>
+  <input class="controls" type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido">
+    <input class="controls" type="text" name="dni" id="dni" placeholder="Dni">
+    <input class="controls" type="number" name="edad" id="edad" placeholder="Edad">
+    Sexo
+    <select name="sexo" id="sexo" class="controls">
+      <option value="Masculino">Masculino</option>
+      <option value="Femenino">Femenino</option>
+    </select>
+    <input type="text" class="controls" name="telefono" id="telefono" placeholder="Teléfono">
+    Gimnasio que asiste
+    <select name="gym" id="gym" class="controls">
+      <option value="San Luis">San Luis</option>
+      <option value="Villa Mercedes">Villa Mercedes</option>
+    </select>
+    Seleccione plan
+    <select name="plan" id="plan" class="controls">
+      <option value="4000">3 veces por semana ($4000)</option>
+      <option value="2800">2 veces a la semana ($2800)</option>
+      <option value="5500">Libre ($5500)</option>
+    </select>
+    Fecha de inscripción
+    <input type="date" class="controls" name="fecha" id="fecha">
+    <input class="botons" type="submit" value="Registrar">  
+  </form>  
 </section>
     
 
@@ -69,6 +53,5 @@
 <!--Fin pie de pagina-->
 
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/formulario.js"></script>
 </body>
 </html>
