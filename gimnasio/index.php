@@ -14,12 +14,9 @@
 ?>
 <!--Fin cabecera-->
 
-<section>
+<section class="container-fluid">
     <div class="row">
-        <div clas>
-
-        </div>
-        <div class="col-12">
+        <div class="col-12 col-md-12 col-sm-12">
             <div class="container p-1 mt-2 mb-2">
                 <div id="carouselExampleIndicators" class="carousel slide">
                     <div class="carousel-indicators">
@@ -29,13 +26,13 @@
                     </div>
                 <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/img1.jpg" class="d-block w-100" alt="...">
+                    <img src="img/img-1.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/img2.jpg" class="d-block w-100" alt="...">
+                    <img src="img/img-2.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/img3.jpg" class="d-block w-100" alt="...">
+                    <img src="img/img-3.jpeg" class="d-block w-100" alt="...">
                 </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -59,6 +56,6 @@
 ?>
 <!--Fin pie de pagina-->
 
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

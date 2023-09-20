@@ -21,7 +21,7 @@ $consulta = mysqli_query($conexion, $insertar);
 if (!$consulta) {
     die("Ocurrio un error durante la consulta");
 }else{
-    echo "<h4>Se registro el usuario exitosamente</h4>";
+    echo "<h4>Se registro el usuario exitosamente</h4> <a href=./../index.php>Volver al Inicio</a>"; 
 }
 
 ?>

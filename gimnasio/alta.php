@@ -6,7 +6,7 @@
     <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
-    <title>Sistema - Gimnasio</title>
+    <title>Sistema - Gimnasio - Formulario</title>
 </head>
 <body>
     
@@ -52,6 +52,6 @@
 ?>
 <!--Fin pie de pagina-->
 
-    <script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

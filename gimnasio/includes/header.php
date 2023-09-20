@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="/gimnasio/index.php">GYM</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -10,10 +10,10 @@
           <a class="nav-link active" aria-current="page" href="/gimnasio/index.php">INICIO</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/gimnasio/alta.php">Dar de Alta</a>
+          <a class="nav-link" href="/gimnasio/alta.php">Registrar usuario</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Dar de Baja</a>
+          <a class="nav-link" href="bd/usuarios.php">Ver registros</a>
         </li>
       </ul>
     </div>
