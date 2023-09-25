@@ -25,7 +25,6 @@ include 'cn.php';
 
 <table border="1" class="table table-striped">
 <tr>
-    <td><b>id</b></td>
     <td><b>nombre</b></td>
     <td><b>dni</b></td>
     <td><b>edad</b></td>
@@ -46,7 +45,6 @@ while($mostrar=mysqli_fetch_array($result)){
 ?>
 
 <tr>
-    <td><?php echo $mostrar['id'] ?></td>
     <td><?php echo $mostrar['nombre'] ?></td>
     <td><?php echo $mostrar['dni'] ?></td>
     <td><?php echo $mostrar['edad'] ?></td>
