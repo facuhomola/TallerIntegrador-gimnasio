@@ -1,0 +1,14 @@
+Instalación de servicios
+dhcp-server
+squid-proxy
+Xampp (incluye apache y Mysql)
+
+Configuración del dhcp
+Editar el archivo /etc/deafult/isc-dhcp-server y colocar la interface
+Editar el archivo dhcpd.conf (hacer una copia previamente) y colocar las sentencias necesarias
+Habilitar el servicio con sudo service isc-dhcp-server start
+
+Configuración de squid
+Editar el archivo squid.conf (realizar copia previamente) y colocar el puerto de escucha, especificar el espacio en cache y tamaño maximo de almacenamiento.
+Crear las acl y sus respectivas restricciones
+Habilitar el servicio con el comando sudo service squid start
