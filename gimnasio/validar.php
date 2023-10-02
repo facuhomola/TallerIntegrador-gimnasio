@@ -13,11 +13,11 @@ $resultado = mysqli_query($conexion, $consulta);
 
 $filas = mysqli_num_rows($resultado);
 if ($filas) {
-    header("location:empleado.php");
+    header("location:index.php");
 }else{
     ?>
     <?php
-    include('index.php');
+    include('login.php');
     ?>
     <h2>Error de autenticación</h2>
     <?php

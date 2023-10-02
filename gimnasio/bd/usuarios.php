@@ -1,3 +1,16 @@
+<?php
+
+session_start();
+//Conectar a la base de datos
+include('bd/cn.php');
+
+$user = $_SESSION['user'];
+if (!isset($user)) {
+    header("location:./../login.php");
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
