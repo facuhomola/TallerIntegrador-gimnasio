@@ -1,19 +1,10 @@
-<div class="container-fluid">
-  <div class="row">
-      <div class="col-12">
-        <h3 class="text-center">Usuario:  
-          <?php
-            include('/gimnasio/bd/cn.php');
-            session_start();
-            $user = $_SESSION['user'];
-            echo "$user";
-          ?>
-        </h3>
-      </div>
-  </div>
-</div>
+<?php
+  include('/gimnasio/bd/cn.php');
+  session_start();
+  $user = $_SESSION['user'];
+?>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg " style="background-color: #e3f2fd;">
   <div class="container-fluid">
     <a class="navbar-brand" href="/gimnasio/index.php">GYM</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,6 +20,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="bd/usuarios.php">Ver registros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Sesión: <?php echo $user ?></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/gimnasio/logout.php">Cerrar Sessión</a>
