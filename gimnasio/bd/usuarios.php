@@ -50,7 +50,7 @@ include 'cn.php';
 
 <?php 
 
-$sql="SELECT * from usuarios";
+$sql="SELECT * from clientes";
 $result=mysqli_query($conexion,$sql);
 
 while($mostrar=mysqli_fetch_array($result)){

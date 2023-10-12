@@ -19,7 +19,7 @@
           <a class="nav-link" href="/gimnasio/alta.php">Registrar usuario</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="bd/usuarios.php">Ver registros</a>
+          <a class="nav-link" href="/gimnasio/bd/usuarios.php">Ver registros</a>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled">Sesión: <?php echo $user ?></a>

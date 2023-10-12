@@ -15,7 +15,7 @@ $fecha = $_POST['fecha'];
 echo "$nombre <br> $dni <br> $edad <br> $sexo <br> $telefono <br> $gym <br> $plan <br> $fecha ";
 
 //insertar datos en la tabla usuarios
-$insertar = "INSERT INTO usuarios(nombre, dni, edad, sexo, telefono, gym, plan, fecha) VALUES('$nombre', '$dni', '$edad', '$sexo', '$telefono', '$gym', '$plan', '$fecha')";
+$insertar = "INSERT INTO clientes(nombre, dni, edad, sexo, telefono, gym, plan, fecha) VALUES('$nombre', '$dni', '$edad', '$sexo', '$telefono', '$gym', '$plan', '$fecha')";
 
 $consulta = mysqli_query($conexion, $insertar);
 if (!$consulta) {

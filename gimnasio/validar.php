@@ -8,7 +8,7 @@ $pass = $_POST['password'];
 session_start();
 $_SESSION['user'] = $user;
 
-$consulta = "SELECT * FROM empleados where user='$user' and pass='$pass' ";
+$consulta = "SELECT * FROM usuarios where user='$user' and pass='$pass' ";
 $resultado = mysqli_query($conexion, $consulta); 
 
 $filas = mysqli_num_rows($resultado);

@@ -55,7 +55,7 @@ if (!isset($user)) {
     </select>
     Fecha de inscripción
     <input type="date" class="controls" name="fecha" id="fecha">
-    <input class="botons" type="submit" value="Registrar">  
+    <button type="button" id="btn-enviar" class="botons" onclick="validar();">Enviar</button>
   </form>  
 </section>
     
@@ -66,6 +66,7 @@ if (!isset($user)) {
 ?>
 <!--Fin pie de pagina-->
 
+<script src="js/formulario.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
