@@ -6,7 +6,7 @@ include('bd/cn.php');
 
 $user = $_SESSION['user'];
 if (!isset($user)) {
-    header("location:login.php");
+    header("location:index.php");
 }
 
 ?>
@@ -26,7 +26,7 @@ if (!isset($user)) {
     
 <!--Cabecera-->
 <?php 
-    require('includes/header.php');
+  require('includes/header.php');
 ?>
 <!--Fin cabecera-->
 

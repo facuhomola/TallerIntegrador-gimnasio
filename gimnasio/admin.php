@@ -11,7 +11,7 @@ $resultado = mysqli_query($conexion, $consulta);
 
 $filas = mysqli_fetch_array($resultado);
 
-if (!isset($user ) || $filas['id_cargo'] == 1 ) {
+if (!isset($user ) || $filas['id_cargo'] == 2 ) {
     header("location:index.php");
 }
 
@@ -23,7 +23,7 @@ if (!isset($user ) || $filas['id_cargo'] == 1 ) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
-    <title>Sistema - Gimnasio - Inicio</title>
+    <title>Sistema - Gimnasio - Administrador</title>
 </head>
 <body>
     
@@ -38,8 +38,47 @@ if (!isset($user ) || $filas['id_cargo'] == 1 ) {
         <div class="col-12 col-md-12 col-sm-12">
             <h1 class="display-4 text-center"> SISTEMA GYM SL-VM </h1>
         </div>
+    </div>
 </div>
 
+<div class="container-lg">
+    <div class="row">
+        <div class="col-3 col-md-3 col-sm-12">
+            <div class="card" style="width: 75%;">
+                <img src="icons/registros.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="bd/empleados.php" class="btn btn-primary">Ver Registros Empleados</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 col-md-3 col-sm-12">
+            <div class="card" style="width: 75%;">
+                <img src="icons/registrar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="alta-empleado.php" class="btn btn-primary">Registrar Empleado</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 col-md-3 col-sm-12">
+            <div class="card" style="width: 75%;">
+                <img src="icons/clientes.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="bd/usuarios.php" class="btn btn-primary">Clientes Registrados</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 col-md-3 col-sm-12">
+            <div class="card" style="width: 75%;">
+                <img src="icons/cliente.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="alta.php" class="btn btn-primary">Registrar Cliente</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--
 <section class="container-fluid">
     <div class="row">
         <div class="col-12 col-md-12 col-sm-12">
@@ -74,11 +113,12 @@ if (!isset($user ) || $filas['id_cargo'] == 1 ) {
         </div>
     </div>
 </section>
+-->
     
 <div class="container-fluid">
     <div class="row">
         <div class="col-12 col-md-12 col-sm-12">
-            <h3>Días - horarios - planes</h3>
+            <h3 class="mt-2 text-center">Días - horarios - planes</h3>
             <table class="table table-success table-striped">
                 <tr>
                     <td><b>DÍA</b></td>
