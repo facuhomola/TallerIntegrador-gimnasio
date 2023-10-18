@@ -2,10 +2,10 @@
 
 # base de datos gimnasio
 tabla cargo | clientes | usuarios
-cargo 
+- cargo 
   - Id
   - Descripcion
-clientes
+- clientes
   - Id
   - Nombre
   - dni
@@ -14,7 +14,7 @@ clientes
   - gym
   - plan
   - fecha
-usuarios
+- usuarios
   - Id
   - user
   - pass
