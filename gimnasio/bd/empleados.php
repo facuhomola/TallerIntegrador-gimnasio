@@ -2,17 +2,16 @@
 
 session_start();
 //Conectar a la base de datos
-include('bd/cn.php');
+include 'cn.php';
 
 $user = $_SESSION['user'];
-
 $consulta = "SELECT * FROM usuarios where user='$user' ";
 $resultado = mysqli_query($conexion, $consulta); 
 
 $filas = mysqli_fetch_array($resultado);
 
 if (!isset($user ) || $filas['id_cargo'] == 2 ) {
-    header("location:index.php");
+    header("location:./../index.php");
 }
 
 ?>
@@ -23,24 +22,26 @@ if (!isset($user ) || $filas['id_cargo'] == 2 ) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./../css/bootstrap.min.css" type="text/css" rel="stylesheet">
-    <title>Sistema - Gimnasio - Registros Empleados</title>
+    <title>Sistema - Gimnasio - Registros</title>
 </head>
 <body>
 
 <!--Cabecera-->
 <?php
-    require('./../includes/header.php');
+
+require('./../includes/header.php');
+
 ?>
 <!--Fin cabecera-->
 
-<h3 class="mt-2 mb-2 text-center">Usuarios Registrados</h3>
+<h3 class="mt-2 mb-2 text-center">Empleados Registrados</h3>
 
 <table border="1" class="table table-striped">
 <tr>
     <td><b>Usuario</b></td>
     <td><b>Nombre</b></td>
-    <td><b>Dni</b></td>
-    <td><b>Cargo</b></td>
+    <td><b>dni</b></td>
+    <td><b>Rol</b></td>
 </tr>
 
 <?php 
@@ -58,11 +59,11 @@ while($mostrar=mysqli_fetch_array($result)){
     <td><?php echo $mostrar['dni'] ?></td>
     <td>
         <?php 
-            if ($mostrar['id_cargo'] == 1 ) {
+            if ($mostrar['id_cargo'] == 1) {
                 echo "Administrador";
             }else{
                 echo "Empleado";
-            } 
+            }
         ?>
     </td>
 </tr>

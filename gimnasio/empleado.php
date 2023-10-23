@@ -40,45 +40,31 @@ if (!isset($user ) || $filas['id_cargo'] == 1 ) {
         </div>
 </div>
 
-<section class="container-fluid">
+<div class="container-lg">
     <div class="row">
-        <div class="col-12 col-md-12 col-sm-12">
-            <div class="container p-1 mt-2 mb-2">
-                <div id="carouselExampleIndicators" class="carousel slide">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/img-1.jpg" class="d-block w-100" alt="...">
+        <div class="col-3 col-md-3 col-sm-12">
+            <div class="card" style="width: 75%;">
+                <img src="icons/clientes.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="bd/usuarios.php" class="btn btn-primary">Clientes Registrados</a>
                 </div>
-                <div class="carousel-item">
-                    <img src="img/img-2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/img-3.jpeg" class="d-block w-100" alt="...">
-                </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
+        </div>
+        <div class="col-3 col-md-3 col-sm-12">
+            <div class="card" style="width: 75%;">
+                <img src="icons/cliente.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="alta.php" class="btn btn-primary">Registrar Cliente</a>
+                </div>
             </div>
         </div>
     </div>
-</section>
+</div>
     
 <div class="container-fluid">
     <div class="row">
         <div class="col-12 col-md-12 col-sm-12">
-            <h3>Días - horarios - planes</h3>
+            <h3 class="mt-2 text-center">Días - horarios - planes</h3>
             <table class="table table-success table-striped">
                 <tr>
                     <td><b>DÍA</b></td>

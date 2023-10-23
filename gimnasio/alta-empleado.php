@@ -32,7 +32,7 @@ if (!isset($user ) || $filas['id_cargo'] == 2 ) {
     
 <!--Cabecera-->
 <?php 
-    require('includes/headeradmin.php');
+    require('includes/header.php');
 ?>
 <!--Fin cabecera-->
 
