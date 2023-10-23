@@ -1,0 +1,8 @@
+REGLAS IPTABLES
+
+regla para habilitar el puerto 80 en la maquina local
+sudo iptables -A INPUT -p tcp --dport 443 -s 127.0.0.1 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 80 -s 127.0.0.1 -j ACCEPT
+sudo iptables -A INPUT -p tcp --sport 80 -d 127.0.0.1 -j ACCEPT
+sudo iptables -A INPUT -p tcp --sport 443 -d 127.0.0.1 -j ACCEPT
+
